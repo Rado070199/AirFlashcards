@@ -19,6 +19,12 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
+	        // Rejestracja ViewModels
+        builder.Services.AddSingleton<HomeViewModel>();
+
+        // Rejestracja Pages
+        builder.Services.AddSingleton<HomeView>();
+
 		return builder.Build();
 	}
 }

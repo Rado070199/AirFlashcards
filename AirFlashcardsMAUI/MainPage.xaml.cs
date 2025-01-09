@@ -9,6 +9,10 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
+    private async void OnLinkTapped(object sender, EventArgs e)
+    {
+		await Shell.Current.GoToAsync("///HomeView");
+    }
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;

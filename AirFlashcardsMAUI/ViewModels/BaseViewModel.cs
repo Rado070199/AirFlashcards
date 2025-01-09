@@ -6,7 +6,7 @@ namespace AirFlashcards
     /// <summary>
     /// Bazowy ViewModel z implementacją powiadamiania o zmianach.
     /// </summary>
-    public partial class BaseViewModel : ObservableObject
+    public abstract partial class BaseViewModel : ObservableObject
     {
         [ObservableProperty]
         private bool isBusy;

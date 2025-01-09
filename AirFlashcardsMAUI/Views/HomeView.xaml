@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AirFlashcards.MainPage">
+             x:Class="AirFlashcards.HomeView">
 
     <ScrollView>
         <VerticalStackLayout
@@ -23,21 +23,6 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
-
-            <Label Text="Go to my website"
-               TextColor="Blue"
-               HorizontalOptions="Center">
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnLinkTapped" />
-            </Label.GestureRecognizers>
-        </Label>
         </VerticalStackLayout>
     </ScrollView>
 
